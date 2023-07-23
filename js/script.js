@@ -61,7 +61,13 @@ document.getElementById("emailForm").addEventListener("submit", function (event)
     const mobileNumber = document.getElementsByName("mobileNumber")[0].value;
     const subject = document.getElementsByName("subject")[0].value;
     const message = document.getElementsByName("message")[0].value;
-    const composeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent('ashwani.singh2@s.amity.edu')}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(message + "\n\n\n\nName: " + fullName + "\nEmail: " + emailAddress + "\nPhone: " + mobileNumber)}`;
-    window.open(composeUrl, "_blank");
+    const mailtoParams = `mailto:ashwani.singh2@s.amity.edu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message + "\n\n\n\nName: " + fullName + "\nEmail: " + emailAddress + "\nPhone: " + mobileNumber)}`;
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+        window.location.href = mailtoParams;
+    } else {
+        const composeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent('ashwani.singh2@s.amity.edu')}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(message + "\n\n\n\nName: " + fullName + "\nEmail: " + emailAddress + "\nPhone: " + mobileNumber)}`;
+        window.open(composeUrl, "_blank");
+    }
     this.reset();
 });
