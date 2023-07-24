@@ -44,10 +44,10 @@ ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 const typed = new Typed(".multiple-text", {
     strings: [
         "Full Stack Developer",
-        "Polyglot Developer",
         "UI/UX Designer",
         "Coding Ninja",
         "Cyber Wizard",
+        "Omnipotent"
     ],
     typeSpeed: 90,
     backSpeed: 90,
