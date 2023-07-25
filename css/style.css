@@ -210,8 +210,9 @@ span {
 }
 
 .skills-container {
-    margin-left: 2%;
-    display: -webkit-box;
+    
+    margin: 55px;
+    display: -webkit-inline-box;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -244,7 +245,7 @@ span {
 
 .skills-container #skillboxxx {
    /* position:a; */
-    margin: 0rem;
+    margin: auto;
 }
 
 .skills-container .skills-box:hover {
