@@ -1,5 +1,5 @@
 # Portfolio
-Welcome to my portfolio! Here, you'll find a showcase of my skills, projects, and achievements. I'm a passionate and skilled developer with expertise in various technologies like [list your skills].
+Welcome to my portfolio! Here, you'll find a showcase of my skills, projects, and achievements. I'm a passionate and skilled developer with expertise in various technologies.
 
 Explore my projects, each with a unique link, to see the diverse range of applications I've developed. From web apps to games, I've poured my creativity and expertise into crafting them.
 
