@@ -35,10 +35,7 @@ ScrollReveal({
     delay: 80,
 });
 ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
-ScrollReveal().reveal(
-    ".home-img, .skills-container,.projects-box,.contact form",
-    { origin: "bottom" }
-);
+ScrollReveal().reveal(".projects-box, .contact form", { origin: "bottom", delay: 200 }); 
 ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 const typed = new Typed(".multiple-text", {
