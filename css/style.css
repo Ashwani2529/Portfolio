@@ -217,7 +217,10 @@ span {
     flex-wrap: wrap;
     gap: 2rem;
 }
-
+#aboutMe{ 
+    margin-right: 22px;
+    text-align: justify;
+}
 .skills-container .skills-box {
     flex: 1 1 30rem;
     background: var(--second-bg-color);
@@ -227,7 +230,9 @@ span {
     border: 0.2rem solid var(--bg-color);
     transition: 0.5s ease;
 }
-
+#skills{
+    margin-left:11px;
+}
 .skills-box i {
     font-size: 7rem;
     color: var(--main-color);
