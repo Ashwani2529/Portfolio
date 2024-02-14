@@ -408,7 +408,7 @@ font-style: italic;
     transition: 0.5s ease;
 }
 p{
-text-align: justify;
+text-align:center;
 }
 
 .footer-iconTop a:hover {
