@@ -16,12 +16,12 @@ window.onscroll = () => {
         let id = sec.getAttribute("id");
         if (top >= offset && top < offset + height) {
             navLinks.forEach((links) => {
-                links.classList.remove("active");
+                links.classList.remove('active');
                 document
-                    .querySelector("header nav a[href*=" + id + "]")
-                    .classList.add("active");
+                    .querySelector('header nav a[href*=' + id + ']')
+                    .classList.add('active');
             });
-        }
+        };
     });
     let header = document.querySelector("header");
     header.classList.toggle("sticky", window.screenY > 100);
@@ -33,12 +33,12 @@ ScrollReveal({
     distance: "80px",
     duration: 1900,
     delay: 80,
+    distance: "80px",
+    duration:2000,
+    delay: 200,
 });
 ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
-ScrollReveal().reveal(
-    ".home-img, .skills-container,.projects-box,.contact form",
-    { origin: "bottom" }
-);
+ScrollReveal().reveal(".home-img, .skills-container, .projects-box, .contact form", { origin: "bottom" }); 
 ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 const typed = new Typed(".multiple-text", {
