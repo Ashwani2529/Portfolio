@@ -177,7 +177,7 @@ span {
 .about-img img {
     width: 35vw;
     border-radius: 35px;
-    margin-left: 2%;
+    margin-left: 1%;
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -187,7 +187,7 @@ span {
 }
 
 .about-content {
-    margin-left: 2%;
+    margin-left: 3%;
     line-height: 1.5;
 }
 #positions{
@@ -236,9 +236,7 @@ font-style: italic;
     border: 0.2rem solid var(--bg-color);
     transition: 0.5s ease;
 }
-#skills{
-    margin-left:11px;
-}
+
 .skills-box i {
     font-size: 7rem;
     color: var(--main-color);
