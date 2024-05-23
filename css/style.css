@@ -423,6 +423,9 @@ text-align:center;
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
+.projects-layer h3{
+    font: 0.3rem;
+}
 
 @media (max-width: 1200px) {
     
@@ -432,14 +435,20 @@ text-align:center;
 }
 
 @media (max-width: 991px) {
+    .projects-layer h3{
+        font: 0.3rem;
+    }
     .projects-layer h4 {
-        font-size: 2rem;
-        margin: -0.2rem -0.1rem 0.8rem;
+        font-size: 1.6rem;
+        margin: -0.4rem -0.3rem 0.1rem;
+    }
+    #positions{
+        font-size: x-small;
     }
     
     .projects-layer p {
-        font-size: 1.2rem;
-        margin: -0.2rem -0.1rem 0.8rem;
+        font-size: 1rem;
+        margin: -0.4rem -0.3rem 0.1rem;
     }
     .header {
         padding: 2rem 3%;
@@ -468,17 +477,23 @@ text-align:center;
 }
 
 @media (max-width: 768px) {
+    .projects-layer h3{
+        font: 0.3rem;
+    }
     .projects-layer h4 {
-        font-size: 1.8rem;
-        margin: -0.2rem -0.1rem 0.8rem;
+        font-size: 1.7rem;
+        margin: -0.4rem -0.3rem 0.1rem;
     }
     
     .projects-layer p {
-        font-size: 1rem;
-        margin: -0.2rem -0.1rem 0.8rem;
+        font-size: 0.9rem;
+        margin: -0.4rem -0.3rem 0.1rem;
     }
     #menu-icon {
         display: block;
+    }
+    #positions{
+        font-size: x-small;
     }
 
     .navbar {
@@ -544,6 +559,9 @@ text-align:center;
 }
 
 @media (max-width: 617px) {
+    #positions{
+        font-size: small;
+    }
     .projects-container {
         grid-template-columns: 1fr;
     }
