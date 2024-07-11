@@ -191,7 +191,7 @@ span {
     line-height: 1.5;
 }
 
-#positions {
+p#positions {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: medium;
@@ -442,9 +442,6 @@ p {
     font: 0.3rem;
 }
 
-p#positions {
-    font-size: x-small;
-}
 
 @media (max-width: 1200px) {
     html {
