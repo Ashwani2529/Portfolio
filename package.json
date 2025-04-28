@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build" :"npm i"
+  },
   "dependencies": {
     "@coreui/icons": "^3.0.1"
   }
