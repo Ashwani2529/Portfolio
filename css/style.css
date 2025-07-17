@@ -299,6 +299,7 @@ p#positions {
 .projects-box1 img {
   width: 100%;
   transition: 0.5s ease;
+  opacity: 0.6;
 }
 
 .projects-container .projects-box:hover,
