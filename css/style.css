@@ -27,10 +27,13 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
 }
-
-section {
+section.home {
+  padding: 10rem 3% 1rem;
   min-height: max-content;
-  padding: 10rem 0% 2rem;
+}
+section:not(.home) {
+  min-height: max-content;
+  padding: 2rem 0% 2rem;
 }
 
 .projects-layer #company-name {
@@ -226,9 +229,11 @@ p#positions {
   padding: 1%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: stretch;
+  flex-wrap: nowrap;
   gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #aboutMe {
@@ -237,13 +242,14 @@ p#positions {
 }
 
 .skills-container .skills-box {
-  flex: 1 1 30rem;
+  flex: 1;
   background: var(--second-bg-color);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
+  min-width: 0;
 }
 
 .skills-box i {
@@ -478,10 +484,21 @@ p {
   .header {
     padding: 2rem 3%;
   }
-
-  section {
+  section.home {
     padding: 10rem 3% 1rem;
     min-height: max-content;
+  }
+  section:not(.home) {
+    padding: 2rem 3% 1rem;
+    min-height: max-content;
+  }
+
+  .skills-container {
+    gap: 1.5rem;
+  }
+
+  .skills-container .skills-box {
+    padding: 2.5rem 1.5rem 3.5rem;
   }
 
   .skills {
@@ -502,6 +519,16 @@ p {
 }
 
 @media (max-width: 768px) {
+  .skills-container {
+    flex-wrap: wrap;
+    max-width: none;
+  }
+
+  .skills-container .skills-box {
+    flex: 1 1 100%;
+    min-width: 280px;
+  }
+
   .projects-layer h4 {
     font-size: 1.7rem;
     margin: -0.1rem -0.3rem 0.4rem;
