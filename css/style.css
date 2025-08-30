@@ -258,8 +258,8 @@ section.home {
 
 .social-media {
   display: flex;
-  gap: 1.4rem;
-  margin-bottom: 4rem;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
   animation: fadeInUp 1s var(--ease-smooth) 1s both;
 }
 
