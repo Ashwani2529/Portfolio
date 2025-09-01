@@ -163,7 +163,7 @@ window.onscroll = () => {
 function handleScroll() {
   sections.forEach((sec) => {
     let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
+    let offset = sec.offsetTop - 200;
     let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
     
@@ -221,7 +221,7 @@ const observer = new IntersectionObserver((entries) => {
       // Add stagger animation for children elements
       const children = entry.target.querySelectorAll('.animate-child');
       children.forEach((child, index) => {
-        child.style.animation = `fadeInUp 0.6s ease forwards ${index * 0.1}s`;
+        child.style.animation = `fadeInUp 0.5s ease forwards ${index * 0.1}s`;
       });
       
       // Special animations for specific sections
@@ -239,7 +239,7 @@ const projectObserver = new IntersectionObserver((entries) => {
       // Add staggered animation based on position in grid
       const allCards = [...document.querySelectorAll('.projects-box, .projects-box1')];
       const cardIndex = allCards.indexOf(entry.target);
-      const delay = (cardIndex % 3) * 150; // Stagger based on position in row
+      const delay = (cardIndex % 3) * 50; // Stagger based on position in row
       
       setTimeout(() => {
         entry.target.classList.add('animate-in');
@@ -264,7 +264,7 @@ const projectSectionObserver = new IntersectionObserver((entries) => {
       projectCards.forEach((card, index) => {
         setTimeout(() => {
           projectObserver.observe(card);
-        }, index * 50);
+        }, index * 20);
       });
       
       // Only trigger once per section
