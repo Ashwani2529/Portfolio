@@ -205,92 +205,34 @@ const typed = new Typed(".multiple-text", {
   smartBackspace: true
 });
 
-// Advanced Scroll Animations with Intersection Observer
-const observerOptions = {
-  threshold: 0.15,
-  rootMargin: '0px 0px -30px 0px'
-};
-
-// Enhanced observer for general sections
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
-      
-      // Add stagger animation for children elements
-      const children = entry.target.querySelectorAll('.animate-child');
-      children.forEach((child, index) => {
-        child.style.animation = `fadeInUp 0.5s ease forwards ${index * 0.1}s`;
-      });
-      
-      // Special animations for specific sections
-      if (entry.target.classList.contains('skills')) {
-        animateSkillsBoxes();
-      }
-    }
-  });
-}, observerOptions);
-
-// Specialized observer for project and experience cards
-const projectObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Add staggered animation based on position in grid
-      const allCards = [...document.querySelectorAll('.projects-box, .projects-box1')];
-      const cardIndex = allCards.indexOf(entry.target);
-      const delay = (cardIndex % 3) * 50; // Stagger based on position in row
-      
-      setTimeout(() => {
-        entry.target.classList.add('animate-in');
-      }, delay);
-      
-      // Remove observer once animated
-      projectObserver.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.2,
-  rootMargin: '0px 0px -50px 0px'
-});
-
-// Enhanced observer for project sections to trigger container animations
-const projectSectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const projectCards = entry.target.querySelectorAll('.projects-box, .projects-box1');
-      
-      // Start observing individual cards with a slight delay
-      projectCards.forEach((card, index) => {
-        setTimeout(() => {
-          projectObserver.observe(card);
-        }, index * 20);
-      });
-      
-      // Only trigger once per section
-      projectSectionObserver.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.1,
-  rootMargin: '0px 0px -100px 0px'
-});
-
-// Observe all sections for scroll animations
+// Initialize all sections to be visible immediately
 sections.forEach(section => {
   // Skip home section as it has its own animations
   if (!section.classList.contains('home')) {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(30px)';
+    section.style.opacity = '1';
+    section.style.transform = 'translateY(0)';
     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(section);
+    
+    // Add stagger animation for children elements immediately
+    const children = section.querySelectorAll('.animate-child');
+    children.forEach((child, index) => {
+      child.style.animation = `fadeInUp 0.5s ease forwards ${index * 0.1}s`;
+    });
+    
+    // Special animations for specific sections
+    if (section.classList.contains('skills')) {
+      animateSkillsBoxes();
+    }
   }
 });
 
-// Observe project sections for card animations
-const projectSections = document.querySelectorAll('#projects, #experience, #achievements');
-projectSections.forEach(section => {
-  projectSectionObserver.observe(section);
+// Initialize all project cards immediately
+const allProjectCards = document.querySelectorAll('.projects-box, .projects-box1');
+allProjectCards.forEach((card, index) => {
+  const delay = (index % 3) * 50; // Stagger based on position in row
+  setTimeout(() => {
+    card.classList.add('animate-in');
+  }, delay);
 });
 
 // Skills Section Animation
@@ -301,26 +243,13 @@ function animateSkillsBoxes() {
   });
 }
 
-// Enhanced fade-in-view functionality for better performance
+// Initialize all fade elements to be visible immediately
 function initScrollRevealAnimations() {
-  // Create a more performant intersection observer for fade-in effects
-  const fadeObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('fade-in-active');
-        fadeObserver.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -30px 0px'
-  });
-  
-  // Add fade-in-view class to elements that need scroll animations
+  // Add fade-in-view class to elements and make them visible immediately
   const fadeElements = document.querySelectorAll('.projects-box, .projects-box1, .skills-box');
   fadeElements.forEach(el => {
     el.classList.add('fade-in-view');
-    fadeObserver.observe(el);
+    el.classList.add('fade-in-active'); // Make them visible immediately
   });
 }
 
@@ -701,7 +630,7 @@ function debounce(func, wait) {
 
 // Apply debouncing to resize events
 window.addEventListener('resize', debounce(() => {
-  // Recalculate animations on resize
+  // Keep all elements visible on resize
   sections.forEach(section => {
     if (!section.classList.contains('home')) {
       section.style.opacity = '1';
