@@ -608,7 +608,7 @@ h1 em, h2 em {
 
 /* About */
 .about, .experience, .projects, .skills, .certifications, .achievements {
-  padding-block: clamp(90px, 13vw, 165px);
+  padding-block: clamp(80px, 13vw, 80px);
 }
 
 .about-grid {
@@ -1684,7 +1684,7 @@ h1 em, h2 em {
 
 /* Contact */
 .contact {
-  padding-block: clamp(90px, 13vw, 150px);
+  padding-block: clamp(80px, 13vw, 80px);
 }
 
 .contact-card {
