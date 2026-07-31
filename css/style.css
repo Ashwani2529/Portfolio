@@ -607,7 +607,7 @@ h1 em, h2 em {
 
 /* About */
 .about, .experience, .projects, .skills, .certifications, .achievements {
-  padding-block: clamp(80px, 13vw, 80px);
+  padding-block: clamp(90px, 13vw, 165px);
 }
 
 .about-grid {
@@ -927,6 +927,12 @@ h1 em, h2 em {
   background: linear-gradient(145deg, #1b1830, #282054 55%, #102f3a);
 }
 
+.project-omegle .project-visual {
+  background:
+    radial-gradient(circle at 18% 15%, rgba(255, 255, 255, 0.16), transparent 15rem),
+    linear-gradient(145deg, #262153, #5840a0 48%, #167a91);
+}
+
 .project-share .project-visual {
   background: linear-gradient(145deg, #d8eaf1, #92cfdb 55%, #4c9eaa);
 }
@@ -941,6 +947,28 @@ h1 em, h2 em {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+}
+
+.project-source-link {
+  color: var(--text-soft);
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 5px;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.project-source-link:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
 }
 
 .project-number {
@@ -1140,6 +1168,168 @@ h1 em, h2 em {
 }
 
 .video-controls b:last-child { background: #ef5c68; }
+
+.omegle-app {
+  width: min(580px, 100%);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  color: #f8f7ff;
+  background: rgba(10, 11, 28, 0.76);
+  box-shadow: 0 35px 90px rgba(8, 6, 28, 0.42);
+  backdrop-filter: blur(18px);
+}
+
+.omegle-topbar {
+  height: 58px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.omegle-topbar strong {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.86rem;
+  letter-spacing: -0.04em;
+}
+
+.omegle-topbar strong span {
+  margin-left: 3px;
+  color: #65e0f0;
+}
+
+.omegle-topbar small {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.6rem;
+}
+
+.omegle-topbar small i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #55e49b;
+  box-shadow: 0 0 0 5px rgba(85, 228, 155, 0.1);
+}
+
+.omegle-stage {
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 1fr 88px 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.stranger-panel {
+  min-width: 0;
+  aspect-ratio: 0.9;
+  padding: 13px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.11), transparent 45%),
+    linear-gradient(145deg, rgba(102, 81, 186, 0.6), rgba(24, 27, 67, 0.92));
+}
+
+.stranger-remote {
+  background:
+    radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.11), transparent 45%),
+    linear-gradient(145deg, rgba(20, 133, 154, 0.6), rgba(18, 46, 70, 0.94));
+}
+
+.stranger-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: rgba(255, 255, 255, 0.54);
+  font-size: 0.48rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.stranger-avatar {
+  width: clamp(52px, 8vw, 76px);
+  height: clamp(52px, 8vw, 76px);
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.08);
+}
+
+.stranger-panel small {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.55rem;
+}
+
+.match-pulse {
+  position: relative;
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.match-pulse i {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(101, 224, 240, 0.38);
+  border-radius: 50%;
+  animation: matchRipple 2.4s ease-out infinite;
+}
+
+.match-pulse i:nth-child(2) { animation-delay: 0.8s; }
+.match-pulse i:nth-child(3) { animation-delay: 1.6s; }
+
+.match-pulse strong {
+  z-index: 1;
+  color: #65e0f0;
+  font-size: 0.48rem;
+  letter-spacing: 0.12em;
+}
+
+.match-pulse small {
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.48rem;
+}
+
+.omegle-message {
+  margin: 0 18px 18px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.58rem;
+}
+
+.omegle-message span { color: rgba(255, 255, 255, 0.55); }
+.omegle-message b { color: #65e0f0; }
+
+@keyframes matchRipple {
+  0% { opacity: 0.8; transform: scale(0.35); }
+  100% { opacity: 0; transform: scale(1.7); }
+}
 
 .share-logo {
   position: absolute;
@@ -1493,7 +1683,7 @@ h1 em, h2 em {
 
 /* Contact */
 .contact {
-  padding-block: clamp(70px, 13vw, 80px);
+  padding-block: clamp(90px, 13vw, 150px);
 }
 
 .contact-card {
@@ -1859,6 +2049,31 @@ h1 em, h2 em {
   .project-visual {
     min-height: 350px;
     padding: 20px;
+  }
+
+  .omegle-stage {
+    padding: 13px;
+    grid-template-columns: 1fr 54px 1fr;
+    gap: 6px;
+  }
+
+  .stranger-panel {
+    padding: 9px;
+    border-radius: 14px;
+  }
+
+  .stranger-label {
+    top: 9px;
+    left: 9px;
+    font-size: 0.4rem;
+  }
+
+  .match-pulse small {
+    display: none;
+  }
+
+  .omegle-message {
+    margin: 0 13px 13px;
   }
 
   .project-social .project-visual {
