@@ -1,667 +1,544 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ashwani Kumar Singh - Full Stack Developer, AI/ML Enthusiast, and Tech Innovator. Explore my portfolio featuring modern web applications, innovative projects, and professional experience." />
-  <meta name="keywords" content="Full Stack Developer, React.js, Node.js, Python, AI/ML, Cloud Computing, Web Development, Portfolio" />
-  <meta name="author" content="Ashwani Kumar Singh" />
-  <meta name="robots" content="index, follow" />
-  
-  <!-- Open Graph Tags -->
-  <meta property="og:title" content="Ashwani Kumar Singh - Full Stack Developer Portfolio" />
-  <meta property="og:description" content="Explore the portfolio of Ashwani Kumar Singh, featuring innovative web applications and cutting-edge technology solutions." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="./images/IMG20241205163251.jpg" />
-  <meta property="og:url" content="#" />
-  
-  <!-- Twitter Card Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Ashwani Kumar Singh - Full Stack Developer" />
-  <meta name="twitter:description" content="Full Stack Developer specializing in modern web technologies and innovative solutions." />
-  <meta name="twitter:image" content="./images/IMG20241205163251.jpg" />
-  
-  <title>Ashwani Kumar Singh - Full Stack Developer Portfolio</title>
-  <link rel="icon" href="./ii.png" type="image/png" />
-  <link rel="canonical" href="#" />
-  
-  <!-- Preconnect for Performance -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c0f">
+  <meta name="description" content="Ashwani Kumar Singh — Full Stack, Backend, Cloud and Data Engineer building scalable products and Azure data platforms.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ashwani Kumar Singh — Software Engineer">
+  <meta property="og:description" content="Production-grade web systems, cloud-native data pipelines, and measurable engineering impact.">
+  <meta property="og:image" content="./images/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ashwani Kumar Singh — Software Engineer">
+  <meta name="twitter:description" content="Full Stack, Backend, Cloud and Data Engineer.">
+  <meta name="twitter:image" content="./images/og.png">
+  <link rel="icon" href="./ii.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://unpkg.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  
-  <!-- Critical CSS -->
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/style.css" />
-  
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ashwani Kumar Singh",
-    "jobTitle": "Full Stack Developer",
-    "description": "Programmer Analyst at Cognizant",
-    "url": "#",
-    "sameAs": [
-      "https://www.linkedin.com/in/ashwani-singh-5a7072223",
-      "https://github.com/Ashwani2529",
-      "https://leetcode.com/Ashwani2529/"
-    ]
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Ashwani Kumar Singh — Software Engineer</title>
 </head>
-
 <body>
-  <!-- Skip to main content for accessibility -->
-  <a href="#main" class="skip-to-main" aria-label="Skip to main content">Skip to main content</a>
-  
-  <!-- Header Navigation -->
-  <header class="header" role="banner">
-    <a href="#home" class="logo" aria-label="Portfolio Home">Portfolio</a>
-    <button id="menu-icon" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-      <box-icon name='menu'></box-icon>
-    </button>
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-      <a href="#home" class="active" aria-label="Go to Home section">Home</a>
-      <a href="#about" aria-label="Go to About section">About</a>
-      <a href="#skills" aria-label="Go to Skills section">Skills</a>
-      <a href="#projects" aria-label="Go to Projects section">Projects</a>
-      <a href="#experience" aria-label="Go to Experience section">Experience</a>
-      <a href="#achievements" aria-label="Go to Achievements section">Achievements</a>
-      <a href="#contact" aria-label="Go to Contact section">Contact</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Ashwani Kumar Singh, home">
+        <span class="brand-mark">A$H</span>
+        <span class="brand-copy">
+          <strong>Ashwani</strong>
+          <small>SOFTWARE ENGINEER</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-content" id="site-menu">
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#certifications">Credentials</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+            <span class="theme-icon" aria-hidden="true">◐</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <a class="button button-small button-primary" href="#contact">Let’s talk</a>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main id="main" role="main">
-    <!-- Hero Section -->
-    <section class="home" id="home" aria-labelledby="hero-heading">
-      <div class="home-content">
-        <h2 class="intro-text">Hello, It's Me</h2>
-        <h1 id="hero-heading">Ashwani Kumar Singh</h1>
-        <h2>And I'm a <span class="multiple-text" aria-label="Dynamic role text"></span></h2>
-        <p class="hero-description">Programmer Analyst at Cognizant</p>
-        <div class="social-media" role="group" aria-label="Social media links">
-          <a href="https://www.linkedin.com/in/ashwani-singh-5a7072223" target="_blank" rel="noopener noreferrer"
-             aria-label="Visit LinkedIn profile" title="LinkedIn">
-            <i class='bx bxl-linkedin' aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/Ashwani2529" target="_blank" rel="noopener noreferrer"
-             aria-label="Visit GitHub profile" title="GitHub">
-            <i class='bx bxl-github' aria-hidden="true"></i>
-          </a>
-          <a href="https://leetcode.com/Ashwani2529/" target="_blank" rel="noopener noreferrer"
-             aria-label="Visit LeetCode profile" title="Leetcode">
-            <i class='bx bx-code' aria-hidden="true"></i>
-          </a>
-          <a href="https://drive.google.com/drive/u/1/folders/1oPt4TEoKJeHL4W7ogWB_jqbPEOnGhmhE" target="_blank" rel="noopener noreferrer"
-             aria-label="View mobile applications" title="Apps">
-            <i class='bx bxl-android' aria-hidden="true"></i>
-          </a>
-          <a href="https://drive.google.com/drive/folders/1XUFkrCeLhoZLADKdijbOhJJ6i9NU5jG8?usp=sharing" target="_blank" rel="noopener noreferrer"
-             aria-label="View certificates" title="Certificates">
-            <i class='bx bxs-folder' aria-hidden="true"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100021759763046" target="_blank" rel="noopener noreferrer"
-             aria-label="Visit Facebook profile" title="Facebook">
-            <i class='bx bxl-facebook-circle' aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/_ash___.__/" target="_blank" rel="noopener noreferrer"
-             aria-label="Visit Instagram profile" title="Instagram">
-            <i class='bx bxl-instagram' aria-hidden="true"></i>
-          </a>
-        </div>
-        <a href="https://drive.google.com/file/d/1pY3ziBgayeQOUI4Og30XRcnoShSbbivS/view?usp=sharing" 
-           target="_blank" rel="noopener noreferrer" class="btn" aria-label="Download CV">
-          <i class='bx bx-download' aria-hidden="true"></i>
-          Download CV
-        </a>
-      </div>
-      <div class="home-img">
-        <img src="./images/IMG20241205163251.jpg" alt="Ashwani Kumar Singh - Professional headshot" 
-             loading="eager" width="500" height="400" />
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about" aria-labelledby="about-heading">
-      <div class="about-img">
-        <img src="./images/abt1.jpg" alt="Ashwani Kumar Singh - About image" 
-             loading="lazy" width="400" height="400" />
-      </div>
-      <div class="about-content">
-        <h2 id="about-heading" class="heading">About <span>ME</span></h2>
-        <h3>Full Stack Developer!</h3>
-        <p id="aboutMe">
-          Hello! I'm Ashwani Kumar Singh, a 24-year-old graduated with B.Tech in Computer Science and
-          Engineering at Amity University Lucknow with an impressive CGPA of 8.9. With a passion for technology and
-          continuous learning, I stay updated with the latest advancements.
-          <br><br>
-          I'm a dedicated Full Stack Developer with extensive experience in crafting scalable and dynamic web
-          applications. My expertise spans across modern technologies including React.js, Node.js, Nest.js, SvelteKit,
-          MongoDB, and cloud platforms like Azure and Google Cloud. I've successfully solved 566+ problems on LeetCode,
-          demonstrating strong algorithmic thinking and data structure knowledge.
-          <br><br>
-          Throughout my journey, I've completed multiple successful internships and led development teams. As Coordinator
-          and Tech Lead of the Explorer Club, I've guided students in skill development and innovation. I've competed in
-          national-level hackathons like Kavach and Accenture Innovation Challenge, securing 1st place in Code Swap and
-          2nd place in Blindathon competitions.
-          <br><br>
-          Beyond development, I have entrepreneurial experience, having sold a Mail Merge automation project for ₹5000,
-          and extensive experience with Big Data technologies including Hadoop, PySpark, and Azure Data Factory.
+  <main id="main-content">
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <div class="availability"><span></span> Open to meaningful engineering opportunities</div>
+        <p class="eyebrow">FULL STACK · BACKEND · CLOUD & DATA</p>
+        <h1>I build systems that turn <em>complexity</em> into momentum.</h1>
+        <p class="hero-lead">
+          Software engineer with 2+ years of experience delivering production web applications,
+          distributed data pipelines, and automation that teams can trust at scale.
         </p>
-        <a href="https://drive.google.com/file/d/1fQvmLxNUZ4r0mpLjsStGpqGmLWVx02rQ/view?usp=sharing" 
-           target="_blank" rel="noopener noreferrer" class="btn" aria-label="Read more about me">
-          <i class='bx bx-book-open' aria-hidden="true"></i>
-          Read More
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="./Ashwani_Kumar_Singh_Resume.pdf" target="_blank" rel="noopener">View résumé <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-socials" aria-label="Professional profiles">
+          <a href="https://www.linkedin.com/in/ashwani-singh-5a7072223" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/Ashwani2529" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://leetcode.com/Ashwani2529/" target="_blank" rel="noopener">LeetCode ↗</a>
+          <a href="https://drive.google.com/drive/u/1/folders/1oPt4TEoKJeHL4W7ogWB_jqbPEOnGhmhE" target="_blank" rel="noopener">Apps ↗</a>
+          <a href="https://drive.google.com/drive/folders/1XUFkrCeLhoZLADKdijbOhJJ6i9NU5jG8?usp=sharing" target="_blank" rel="noopener">Certificate archive ↗</a>
+          <a href="https://www.facebook.com/profile.php?id=100021759763046" target="_blank" rel="noopener">Facebook ↗</a>
+          <a href="https://www.instagram.com/_ash___.__/" target="_blank" rel="noopener">Instagram ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-orbit" aria-hidden="true">
+          <span class="orbit orbit-one"></span>
+          <span class="orbit orbit-two"></span>
+        </div>
+        <div class="portrait-frame">
+          <img src="./images/IMG20241205163251.jpg" alt="Portrait of Ashwani Kumar Singh">
+        </div>
+        <div class="role-card">
+          <small>CURRENTLY</small>
+          <strong>Programmer Analyst</strong>
+          <span>Cognizant · Gurugram</span>
+        </div>
+        <div class="code-card" aria-hidden="true">
+          <span>impact.reduce(</span>
+          <strong>30 min → 2 sec</strong>
+          <span>);</span>
+        </div>
+      </div>
+
+      <div class="hero-metrics" aria-label="Career highlights">
+        <article><strong>29K+</strong><span>users served</span></article>
+        <article><strong>99%</strong><span>reporting time saved</span></article>
+        <article><strong>586+</strong><span>LeetCode problems</span></article>
+        <article><strong>7</strong><span>industry credentials</span></article>
+      </div>
+    </section>
+
+    <section class="about section-shell" id="about">
+      <div class="section-index">01 / ABOUT</div>
+      <div class="about-grid">
+        <div class="section-heading">
+          <p class="eyebrow">ENGINEERING WITH INTENT</p>
+          <h2>More than shipping code. I build for <em>clarity, reliability,</em> and real outcomes.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I’m Ashwani, a Full Stack and Backend Engineer working at the intersection of product
+            engineering and cloud data systems. At Cognizant, I architect and maintain distributed
+            Azure pipelines that ingest data from multiple vendors into reliable lakehouse layers.
+          </p>
+          <p>
+            Before that, I shipped 20+ production features across six applications at Banao
+            Technologies, designing REST APIs and backend services used by more than 10,000 monthly
+            active users. I care about resilient architecture, thoughtful interfaces, measurable
+            performance, and leaving systems easier to operate than I found them.
+          </p>
+          <div class="about-facts">
+            <div><span>Based in</span><strong>Gurugram, India</strong></div>
+            <div><span>Education</span><strong>B.Tech CSE · 8.77 CGPA</strong></div>
+            <div><span>Focus</span><strong>Scalable systems & data</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section-shell" id="experience">
+      <div class="section-index">02 / EXPERIENCE</div>
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">WHERE I’VE CREATED IMPACT</p>
+          <h2>Experience measured in <em>outcomes.</em></h2>
+        </div>
+        <p>From product platforms to distributed data systems, I work across the stack and stay close to the result.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="experience-card current">
+          <div class="experience-meta">
+            <span class="status-chip">CURRENT</span>
+            <time>MAR 2025 — PRESENT</time>
+          </div>
+          <div class="experience-company">
+            <div class="company-mark">C</div>
+            <div>
+              <h3>Programmer Analyst</h3>
+              <p>Cognizant Technology Solutions · Gurugram</p>
+            </div>
+          </div>
+          <ul>
+            <li>Architected a fault-tolerant Azure ETL pipeline ingesting data from 6+ vendors into RAW, Curated, Staging, and Fact/Dim lakehouse layers.</li>
+            <li>Built Python validation and SIT automation that delivered complete data-accuracy visibility and eliminated 10+ hours of daily manual monitoring.</li>
+            <li>Automated Excel reporting and Teams delivery with ADF, Databricks, and Power Automate—cutting workflows from 30 minutes to 2 seconds.</li>
+          </ul>
+          <div class="tag-row"><span>Azure Data Factory</span><span>Databricks</span><span>Python</span><span>Synapse</span><span>PySpark</span></div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-meta">
+            <span class="status-chip neutral">PRODUCT ENGINEERING</span>
+            <time>SEP 2023 — APR 2024</time>
+          </div>
+          <div class="experience-company">
+            <div class="company-mark alt">B</div>
+            <div>
+              <h3>Full Stack Engineer · MERN</h3>
+              <p>Banao Technologies · Bengaluru</p>
+            </div>
+          </div>
+          <ul>
+            <li>Delivered 20+ features across six production applications, increasing customer engagement by 25%.</li>
+            <li>Designed high-throughput Node.js and MongoDB services for 10,000+ monthly users.</li>
+            <li>Strengthened testing and CI/CD while reducing server downtime by 35% on Azure Web App Services.</li>
+          </ul>
+          <div class="tag-row"><span>React</span><span>Node.js</span><span>MongoDB</span><span>REST APIs</span><span>CI/CD</span></div>
+        </article>
+      </div>
+
+      <div class="archive-heading">
+        <div>
+          <p class="eyebrow">EARLIER EXPERIENCE</p>
+          <h3>Every role that shaped the engineer I am today.</h3>
+        </div>
+        <span>2023 — 2025</span>
+      </div>
+
+      <div class="experience-archive">
+        <article class="archive-card">
+          <div class="archive-top"><span>CT</span><time>MAR — JUN 2025</time></div>
+          <h3>Cognizant Technology Solutions</h3>
+          <h4>Intern</h4>
+          <p>Worked hands-on with Python, SQL, Azure Data Factory, PySpark, Hadoop, and Hive for ETL and Big Data transformation.</p>
+          <a href="https://www.cognizant.com/" target="_blank" rel="noopener">Company ↗</a>
+        </article>
+        <article class="archive-card">
+          <div class="archive-top"><span>HT</span><time>SEP — DEC 2024</time></div>
+          <h3>Heliverse Technologies</h3>
+          <h4>Full Stack Developer</h4>
+          <p>Contributed to an HRMS platform with Nest.js and React.js, translating design analysis and client feedback into a stronger user experience.</p>
+          <a href="https://heliverse.com/" target="_blank" rel="noopener">Company ↗</a>
+        </article>
+        <article class="archive-card">
+          <div class="archive-top"><span>MC</span><time>MAY — SEP 2024</time></div>
+          <h3>Meta Craftlab Pvt. Ltd.</h3>
+          <h4>Associate Developer</h4>
+          <p>Built Net Credentials and Inboxera, and managed 30+ teams as Team Lead and Project Manager for Developer Star.</p>
+          <a href="https://craftlab.ai/" target="_blank" rel="noopener">Company ↗</a>
+        </article>
+        <article class="archive-card">
+          <div class="archive-top"><span>AP</span><time>MAY — JUN 2024</time></div>
+          <h3>A Plan By Consultants</h3>
+          <h4>Developer</h4>
+          <p>Created JavaScript and Google Apps Script workflows, maintained Wix experiences, and delivered a commercial Mail Merge automation.</p>
+          <a href="https://www.aplanbyconsultants.com/" target="_blank" rel="noopener">Company ↗</a>
+        </article>
+        <article class="archive-card">
+          <div class="archive-top"><span>AS</span><time>SEP — NOV 2023</time></div>
+          <h3>Alhansat Solutions</h3>
+          <h4>Full Stack Developer · Tech Lead</h4>
+          <p>Led the Personal Portfolio Platform during the IEEE Bombay Section Fall Internship Program and managed cross-functional delivery.</p>
+          <a href="https://alhansat.com/" target="_blank" rel="noopener">Company ↗</a>
+        </article>
+        <article class="archive-card">
+          <div class="archive-top"><span>AT</span><time>AUG — OCT 2023</time></div>
+          <h3>ATBC Technologies</h3>
+          <h4>Web Designer</h4>
+          <p>Designed and developed AI Jobkit in Wix, combining UI/UX principles, JavaScript, landing pages, and digital creative work.</p>
+          <a href="https://www.linkedin.com/company/atbc-technologies-pvt-ltd/about/" target="_blank" rel="noopener">Company ↗</a>
+        </article>
+        <article class="archive-card">
+          <div class="archive-top"><span>KH</span><time>JUL — OCT 2023</time></div>
+          <h3>Knot Hashtags</h3>
+          <h4>Full Stack Developer</h4>
+          <p>Crafted the visual identity and e-commerce user experience using Figma and Uizard, then collaborated on implementation.</p>
+          <a href="https://knothastags.com/" target="_blank" rel="noopener">Company ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section-shell" id="projects">
+      <div class="section-index">03 / SELECTED WORK</div>
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">BUILT, SHIPPED, USED</p>
+          <h2>Products with <em>technical depth.</em></h2>
+        </div>
+        <a class="text-link" href="https://github.com/Ashwani2529" target="_blank" rel="noopener">More on GitHub ↗</a>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card project-live">
+          <div class="project-visual" aria-hidden="true">
+            <div class="browser-bar"><i></i><i></i><i></i><span>live-cam / room</span></div>
+            <div class="video-grid">
+              <div><span>A$H</span></div><div><span>RM</span></div><div><span>JS</span></div><div><span>+4</span></div>
+            </div>
+            <div class="video-controls"><b>●</b><b>◉</b><b>↗</b><b>×</b></div>
+          </div>
+          <div class="project-copy">
+            <div class="project-number">01</div>
+            <p class="eyebrow">REAL-TIME COMMUNICATION</p>
+            <h3>Live Cam</h3>
+            <p>A fault-tolerant group video experience with peer-to-peer WebRTC streaming, Socket.IO signaling, auto-reconnection, and responsive multi-participant rooms.</p>
+            <div class="tag-row"><span>React</span><span>TypeScript</span><span>WebRTC</span><span>Socket.IO</span><span>Node.js</span></div>
+            <a class="button button-secondary" href="https://live-cam.vercel.app/" target="_blank" rel="noopener">View live project ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card project-share">
+          <div class="project-visual" aria-hidden="true">
+            <div class="share-logo">S</div>
+            <div class="drop-zone"><span>⇧</span><strong>Drop anything here</strong><small>files · text · links</small></div>
+            <div class="file-pill">design-brief.pdf <b>100%</b></div>
+          </div>
+          <div class="project-copy">
+            <div class="project-number">02</div>
+            <p class="eyebrow">SECURE FILE SHARING</p>
+            <h3>SHAREit</h3>
+            <p>A secure file and rich-text sharing platform with drag-and-drop uploads, Supabase storage, protected personal pages, caching, and RESTful retrieval.</p>
+            <div class="tag-row"><span>React</span><span>Express</span><span>MongoDB</span><span>Supabase</span><span>Auth</span></div>
+            <a class="button button-secondary" href="https://shareit-lite.netlify.app" target="_blank" rel="noopener">View live project ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card project-social">
+          <div class="project-visual" aria-hidden="true">
+            <div class="social-sidebar"><b>f.</b><i></i><i></i><i></i><i></i></div>
+            <div class="social-feed">
+              <div class="social-story"><i></i><i></i><i></i><i></i></div>
+              <div class="social-post"><span></span><strong></strong><p></p><p></p><div></div></div>
+            </div>
+            <div class="online-card"><strong>Online</strong><i></i><i></i><i></i></div>
+          </div>
+          <div class="project-copy">
+            <div class="project-number">03</div>
+            <p class="eyebrow">PRODUCTION-SCALE SOCIAL</p>
+            <h3>Facebook Lite</h3>
+            <p>A social platform serving 29K+ users, 1.8K+ posts, 18K+ notifications, 8.8K+ chat requests, and 2.1K+ messages with scalable APIs and real-time engagement.</p>
+            <div class="tag-row"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Supabase</span><span>System Design</span></div>
+            <a class="button button-secondary" href="https://facebook-lite.vercel.app" target="_blank" rel="noopener">View live project ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="archive-heading project-archive-heading">
+        <div>
+          <p class="eyebrow">MORE BUILDS</p>
+          <h3>The rest of the project journey.</h3>
+        </div>
+        <span>9 PROJECTS</span>
+      </div>
+
+      <div class="more-projects-grid">
+        <article class="compact-project">
+          <div class="compact-project-top"><span>TEXT PRODUCTIVITY</span><b>01</b></div>
+          <h3>iText Editor</h3>
+          <p>A rich web editor for transforming, analyzing, importing, exporting, and securely keeping text and notes.</p>
+          <div class="tag-row"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+          <a href="https://itext-editor.netlify.app/" target="_blank" rel="noopener">Open project ↗</a>
+        </article>
+        <article class="compact-project">
+          <div class="compact-project-top"><span>AUTOMATION</span><b>02</b></div>
+          <h3>Mail Merge</h3>
+          <p>A Google Apps Script automation that generates and distributes personalized messages from structured data.</p>
+          <div class="tag-row"><span>Apps Script</span><span>Sheets</span><span>Automation</span></div>
+          <a href="https://github.com/Ashwani2529/Mail_Merge" target="_blank" rel="noopener">View source ↗</a>
+        </article>
+        <article class="compact-project">
+          <div class="compact-project-top"><span>REAL-TIME CHAT</span><b>03</b></div>
+          <h3>Chat Verse</h3>
+          <p>A responsive real-time group chat experience with fast Socket.IO messaging and a clean React interface.</p>
+          <div class="tag-row"><span>React</span><span>Socket.IO</span><span>Node.js</span></div>
+          <a href="https://chatverxe.netlify.app/" target="_blank" rel="noopener">Open project ↗</a>
+        </article>
+        <article class="compact-project">
+          <div class="compact-project-top"><span>WEATHER DATA</span><b>04</b></div>
+          <h3>Weather Sage</h3>
+          <p>A worldwide real-time weather companion with location search, accurate reports, and contextual weather visuals.</p>
+          <div class="tag-row"><span>JavaScript</span><span>Weather API</span><span>CSS</span></div>
+          <a href="https://weather-sage-fc.netlify.app" target="_blank" rel="noopener">Open project ↗</a>
+        </article>
+        <article class="compact-project">
+          <div class="compact-project-top"><span>NO-CODE TOOL</span><b>05</b></div>
+          <h3>Form Builder</h3>
+          <p>A streamlined interface for composing and publishing custom forms without manually writing markup.</p>
+          <div class="tag-row"><span>React</span><span>Forms</span><span>UX</span></div>
+          <a href="https://formxbuilder.netlify.app/" target="_blank" rel="noopener">Open project ↗</a>
+        </article>
+        <article class="compact-project">
+          <div class="compact-project-top"><span>DEVELOPER TOOLS</span><b>06</b></div>
+          <h3>Developer Star</h3>
+          <p>A global developer toolkit enhanced through optimized UI, broader tooling, and more efficient workflows.</p>
+          <div class="tag-row"><span>SvelteKit</span><span>Prisma</span><span>MySQL</span></div>
+          <a href="https://developerstar.com" target="_blank" rel="noopener">Open project ↗</a>
+        </article>
+        <article class="compact-project">
+          <div class="compact-project-top"><span>COMMUNITY</span><b>07</b></div>
+          <h3>Explorer Club</h3>
+          <p>A science and technology community platform for sharing projects, trending problems, and student innovation.</p>
+          <div class="tag-row"><span>Web</span><span>Community</span><span>Leadership</span></div>
+          <a href="https://explorer-club.netlify.app" target="_blank" rel="noopener">Open project ↗</a>
+        </article>
+        <article class="compact-project">
+          <div class="compact-project-top"><span>MATHEMATICS</span><b>08</b></div>
+          <h3>GPS Calculator</h3>
+          <p>A React mathematics suite combining graphing, polynomial roots, scientific functions, and everyday calculations.</p>
+          <div class="tag-row"><span>React</span><span>Graphs</span><span>Math</span></div>
+          <a href="https://gps-calculator.netlify.app/" target="_blank" rel="noopener">Open project ↗</a>
+        </article>
+        <article class="compact-project">
+          <div class="compact-project-top"><span>WEB GAME</span><b>09</b></div>
+          <h3>Reaction Game</h3>
+          <p>A fast keyboard-reaction challenge where players race against a 30-second timer to maximize their score.</p>
+          <div class="tag-row"><span>JavaScript</span><span>Game Logic</span><span>CSS</span></div>
+          <a href="https://reaxtion-game.netlify.app" target="_blank" rel="noopener">Play game ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section-shell" id="skills">
+      <div class="section-index">04 / CAPABILITIES</div>
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">MY ENGINEERING TOOLKIT</p>
+          <h2>Broad enough to connect the system. <em>Deep where it matters.</em></h2>
+        </div>
+        <p>I choose technology around the problem—not the other way around.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card featured">
+          <span class="skill-icon">01</span>
+          <h3>Backend & Systems</h3>
+          <p>Designing APIs, services, and architectures for reliability, scale, and clear ownership.</p>
+          <div class="skill-tags"><span>Node.js</span><span>Express</span><span>Nest.js</span><span>REST</span><span>Microservices</span><span>System Design</span><span>Prisma</span></div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">02</span>
+          <h3>Cloud & Data</h3>
+          <p>Building observable, fault-tolerant pipelines across the modern Azure data stack.</p>
+          <div class="skill-tags"><span>Azure</span><span>ADF</span><span>Databricks</span><span>Synapse</span><span>PySpark</span><span>Hadoop</span></div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">03</span>
+          <h3>Frontend</h3>
+          <p>Creating responsive product interfaces with deliberate UX and maintainable components.</p>
+          <div class="skill-tags"><span>React</span><span>TypeScript</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>SvelteKit</span></div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">04</span>
+          <h3>Databases</h3>
+          <p>Modeling and querying data across relational, document, cache, and managed platforms.</p>
+          <div class="skill-tags"><span>MongoDB</span><span>PostgreSQL</span><span>MySQL</span><span>Redis</span><span>Supabase</span><span>Firebase</span></div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">05</span>
+          <h3>Quality & Delivery</h3>
+          <p>Making software safer to change through testing, automation, and observable delivery.</p>
+          <div class="skill-tags"><span>Jest</span><span>Mocha</span><span>Pytest</span><span>SIT</span><span>CI/CD</span><span>GitHub Actions</span></div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">06</span>
+          <h3>Languages & Core</h3>
+          <p>A strong problem-solving foundation spanning algorithms, data structures, and OOP.</p>
+          <div class="skill-tags"><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span><span>C++</span><span>DSA</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="certifications section-shell" id="certifications">
+      <div class="section-index">05 / CREDENTIALS</div>
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">VERIFIED EXPERTISE</p>
+          <h2>Credentials that back the <em>work.</em></h2>
+        </div>
+        <p>Each card links directly to its official Microsoft Learn or Credly verification page.</p>
+      </div>
+
+      <div class="cert-grid">
+        <a class="cert-card primary-cert" href="https://learn.microsoft.com/api/credentials/share/en-us/ashwani-singh-2749/D03EF2A227CA2500?sharingId" target="_blank" rel="noopener">
+          <div class="cert-provider microsoft">M</div>
+          <div><span>MICROSOFT CERTIFIED</span><h3>Azure AI Engineer Associate</h3><p>Applied AI solutions on Microsoft Azure</p></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <a class="cert-card" href="https://learn.microsoft.com/api/credentials/share/en-gb/ashwani-singh-2749/868CDE10754B995F?sharingId" target="_blank" rel="noopener">
+          <div class="cert-provider fabric">F</div>
+          <div><span>MICROSOFT CERTIFIED</span><h3>Fabric Data Engineer Associate</h3><p>Enterprise analytics data engineering</p></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <a class="cert-card" href="https://learn.microsoft.com/api/credentials/share/en-us/ashwani-singh-2749/74C568C42DDA22EE?sharingId" target="_blank" rel="noopener">
+          <div class="cert-provider fabric">F</div>
+          <div><span>MICROSOFT CERTIFIED</span><h3>Fabric Analytics Engineer Associate</h3><p>Analytics solutions with Microsoft Fabric</p></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <a class="cert-card" href="https://learn.microsoft.com/api/credentials/share/en-us/ashwani-singh-2749/27CAD4392DE5E60B?sharingId" target="_blank" rel="noopener">
+          <div class="cert-provider azure">A</div>
+          <div><span>MICROSOFT CERTIFIED</span><h3>Azure Fundamentals</h3><p>Foundational Azure cloud knowledge</p></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <a class="cert-card" href="https://learn.microsoft.com/api/credentials/share/en-us/ashwani-singh-2749/3751AB93B2D26F1F?sharingId=4D968634BA7EA866" target="_blank" rel="noopener">
+          <div class="cert-provider github">GH</div>
+          <div><span>GITHUB CERTIFIED</span><h3>GitHub Actions</h3><p>Workflow automation and CI/CD</p></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <a class="cert-card" href="https://learn.microsoft.com/api/credentials/share/en-us/ashwani-singh-2749/B5704A17D842DDBB?sharingId=4D968634BA7EA866" target="_blank" rel="noopener">
+          <div class="cert-provider github">GH</div>
+          <div><span>GITHUB CERTIFIED</span><h3>GitHub Administration</h3><p>Enterprise GitHub administration</p></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <a class="cert-card" href="https://www.credly.com/badges/a980973f-8b66-4ab5-8900-47effc48776b/linked_in_profile" target="_blank" rel="noopener">
+          <div class="cert-provider github">GH</div>
+          <div><span>GITHUB CERTIFIED</span><h3>GitHub Foundations</h3><p>Core Git and GitHub collaboration</p></div>
+          <b aria-hidden="true">↗</b>
         </a>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills" aria-labelledby="skills-heading">
-      <h2 id="skills-heading" class="heading">My <span>Skills</span></h2>
-      <div class="skills-container" role="grid" aria-label="Skills overview">
-        <article class="skills-box" role="gridcell">
-          <i class='bx bx-code-alt' aria-hidden="true"></i>
-          <h3>Programming Languages</h3>
-          <p>Proficient in multiple programming languages including C and C++ for system-level programming, Python for
-            data manipulation and automation, and Google Apps Script for workflow automation and integration with Google
-            Workspace applications.</p>
-        </article>
-
-        <article class="skills-box" role="gridcell">
-          <i class='bx bx-data' aria-hidden="true"></i>
-          <h3>Databases</h3>
-          <p>Extensive experience working with modern database systems including MongoDB for NoSQL document storage, MySQL
-            for relational data management, Firebase for real-time database solutions, and Supabase for
-            backend-as-a-service solutions with real-time capabilities.</p>
-        </article>
-
-        <article class="skills-box" role="gridcell">
-          <i class='bx bx-code-curly' aria-hidden="true"></i>
-          <h3>Technologies</h3>
-          <p>Well-versed in modern web development technologies including HTML5, CSS, and JavaScript for frontend
-            development. Experienced with React.js and SvelteKit for dynamic user interfaces, Node.js, Express, and
-            Nest.js for backend services, Prisma ORM for database management, and Big Data technologies like PySpark and
-            Hadoop. Proficient with developer tools including Git, Docker, Google Cloud Platform, Microsoft Azure, and VS
-            Code.</p>
-        </article>
-
-        <article class="skills-box" role="gridcell">
-          <i class='bx bx-group' aria-hidden="true"></i>
-          <h3>Soft Skills</h3>
-          <p>Strong interpersonal and professional skills including effective Communication, Leadership capabilities,
-            Adaptability to changing environments, collaborative Teamwork, Resilience under pressure, and analytical
-            Problem-Solving abilities essential for successful project delivery.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading" class="heading">My<span> Projects</span></h2>
-      <div class="projects-container" role="grid" aria-label="Portfolio projects">
-        
-        <article class="projects-box" role="gridcell">
-          <img src="images/portfolio9.jpg" alt="Live Cam project screenshot" loading="lazy" />
-          <div class="projects-layer">
-            <h4>Live Cam</h4>
-            <p>Real-time video calling app built with MERN and WebRTC. Offers seamless peer-to-peer communication, media
-              controls, responsive UI, auto-reconnect, and socket-powered signaling—fully browser-based with TypeScript
-              support.</p>
-            <a href="https://live-cam.vercel.app/" target="_blank" rel="noopener noreferrer"
-               aria-label="Preview Live Cam project" title="Preview">
-              <i class='bx bx-link-external' aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="projects-box" role="gridcell">
-          <img src="images/portfolio1.jpg" alt="iText-Editor project screenshot" loading="lazy" />
-          <div class="projects-layer">
-            <h4>iText-Editor</h4>
-            <p>iText-Editor: The ultimate online word processor. Enjoy Microsoft Word-like features with cloud-saving
-              capability. Access files from anywhere, anytime. Simplify your word processing needs with our innovative
-              web-based app.</p>
-            <a href="https://itext-editor.netlify.app/" target="_blank" rel="noopener noreferrer"
-               aria-label="Preview iText-Editor project" title="Preview">
-              <i class='bx bx-link-external' aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="projects-box" role="gridcell">
-          <img src="images/portfolio2.jpg" alt="Mail Merge project screenshot" loading="lazy" />
-          <div class="projects-layer">
-            <h4>Mail Merge</h4>
-            <p>Mail Merge script automates personalized email sending, attaching PDFs, utilizing Excel lists,
-              offering ease, and unlimited tokens for efficient bulk emailing.</p>
-            <a href="https://github.com/Ashwani2529/Mail_Merge" target="_blank" rel="noopener noreferrer"
-               aria-label="Preview Mail Merge project" title="Preview">
-              <i class='bx bx-link-external' aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="projects-box" role="gridcell">
-          <img src="images/portfolio3.jpg" alt="Chat Verse project screenshot" loading="lazy" />
-          <div class="projects-layer">
-            <h4>Chat Verse</h4>
-            <p>ChatVerse: Real-time group chatting web app with React.js & Socket.io. Sleek UI, lightning-fast response
-              time. Connect, share, and express with ease. Join now and experience the magic of live chat!</p>
-            <a href="https://chatverxe.netlify.app/" target="_blank" rel="noopener noreferrer"
-               aria-label="Preview Chat Verse project" title="Preview">
-              <i class='bx bx-link-external' aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="projects-box" role="gridcell">
-          <img src="images/portfolio4.jpg" alt="Weather Sage project screenshot" loading="lazy" />
-          <div class="projects-layer">
-            <h4>Weather Sage</h4>
-            <p>WeatherSage is a sleek weather app offering real-time reports worldwide. It features an interactive
-              interface, accurate weather data, and a unique weather icon display. Users can plan their activities
-              effectively, making it the ideal weather companion.</p>
-            <a href="https://weather-sage-fc.netlify.app" target="_blank" rel="noopener noreferrer"
-               aria-label="Preview Weather Sage project" title="Preview">
-              <i class='bx bx-link-external' aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="projects-box" role="gridcell">
-          <img src="images/portfolio9.jpg" alt="Form Builder project screenshot" loading="lazy" />
-          <div class="projects-layer">
-            <h4>Form Builder</h4>
-            <p>FormBuilder: Create personalized forms, share via unique links, and store responses in MongoDB database.
-              Effortless, efficient, and secure.</p>
-            <a href="https://formxbuilder.netlify.app/" target="_blank" rel="noopener noreferrer"
-               aria-label="Preview Form Builder project" title="Preview">
-              <i class='bx bx-link-external' aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="projects-box" role="gridcell">
-          <img src="images/portfolio13.jpg" alt="Developer Star project screenshot" loading="lazy" />
-          <div class="projects-layer">
-            <h4>Developer Star</h4>
-            <p>Enhanced a developer toolkit by optimizing UI and integrating tools using SvelteKit, Tailwind CSS, and
-              Prisma ORM. Improved workflow efficiency for the global dev community through intuitive design and
-              comprehensive tool availability.</p>
-            <a href="https://developerstar.com" target="_blank" rel="noopener noreferrer"
-               aria-label="Preview Developer Star project" title="Preview">
-              <i class='bx bx-link-external' aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="projects-box" role="gridcell">
-          <img src="images/portfolio14.jpeg" alt="Facebook Lite project screenshot" loading="lazy" />
-          <div class="projects-layer">
-            <h4>Facebook Lite</h4>
-            <p>Built a social media platform using the MERN Stack with authentication and interactive features. Designed a
-              scalable system for seamless CRUD operations on user data, post creation, liking, and commenting
-              functionalities.</p>
-            <a href="https://facebook-lite.vercel.app" target="_blank" rel="noopener noreferrer"
-               aria-label="Preview Facebook Lite project" title="Preview">
-              <i class='bx bx-link-external' aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="projects-box" role="gridcell">
-          <img src="images/portfolio12.jpg" alt="Weather Week project screenshot" loading="lazy" />
-          <div class="projects-layer">
-            <h4>Weather Week</h4>
-            <p>Weather Week: Explore global city forecasts for the entire week. Powered by OpenWeather API, stay informed
-              about temperatures, conditions, and more. Plan travels, stay prepared, and embrace worldwide weather.
-              Convenient global updates at your fingertips!</p>
-            <a href="https://weather-week-fc.netlify.app" target="_blank" rel="noopener noreferrer"
-               aria-label="Preview Weather Week project" title="Preview">
-              <i class='bx bx-link-external' aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="projects-box" role="gridcell">
-          <img src="images/portfolio5.jpg" alt="Explorer Club project screenshot" loading="lazy" />
-          <div class="projects-layer">
-            <h4>Explorer Club</h4>
-            <p>Welcome to Explorer Club. Our goal is to expand our ideas into the field of Science & Tech and build
-              several projects on latest Trending Problems under the guidance of The Explorer Club</p>
-            <a href="https://explorer-club.netlify.app" target="_blank" rel="noopener noreferrer"
-               aria-label="Preview Explorer Club project" title="Preview">
-              <i class='bx bx-link-external' aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="projects-box" role="gridcell">
-          <img src="images/portfolio6.jpg" alt="GPS Calculator project screenshot" loading="lazy" />
-          <div class="projects-layer">
-            <h4>GPS Calculator</h4>
-            <p>The GPS-Calculator is a React project with graphing, polynomial roots, and scientific calculators. It
-              offers versatile mathematical tools for functions, roots, and scientific operations.</p>
-            <a href="https://gps-calculator.netlify.app/" target="_blank" rel="noopener noreferrer"
-               aria-label="Preview GPS Calculator project" title="Preview">
-              <i class='bx bx-link-external' aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-
-        <article class="projects-box" role="gridcell">
-          <img src="images/portfolio7.jpg" alt="Reaction Game project screenshot" loading="lazy" />
-          <div class="projects-layer">
-            <h4>Reaction Game</h4>
-            <p>The game round will run for 30 seconds, score highest by pressing the keys that are showed in screen.</p>
-            <a href="https://reaxtion-game.netlify.app" target="_blank" rel="noopener noreferrer"
-               aria-label="Preview Reaction Game project" title="Preview">
-              <i class='bx bx-link-external' aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="projects" id="experience" aria-labelledby="experience-heading">
-      <h2 id="experience-heading" class="heading">My<span> Experiences</span></h2>
-      <div class="projects-container" role="grid" aria-label="Professional experiences">
-        
-        <article class="projects-box1" role="gridcell">
-          <img src="images/portfolio15.jpeg" alt="Cognizant Technology Solutions logo" loading="lazy" />
-          <div class="projects-layer">
-            <h4>
-              <a id="company-name" href="https://www.cognizant.com/" target="_blank" rel="noopener noreferrer"
-                 aria-label="Cognizant Technology Solutions">
-                Cognizant Technology Solutions
-              </a>
-            </h4>
-            <p id="positions">Programmer Analyst</p>
-            <p>Implementing data integration solutions using Azure Data Factory and various Azure cloud services. Working
-              on large-scale data processing in a Big Data Lab using Hadoop, HDFS and PySpark.</p>
-            <h3><i id="timeline">June/2025 - Present</i></h3>
-          </div>
-        </article>
-
-        <article class="projects-box1" role="gridcell">
-          <img src="images/portfolio14.jpeg" alt="Cognizant intern experience" loading="lazy" />
-          <div class="projects-layer">
-            <h4>
-              <a id="company-name" href="https://www.cognizant.com/" target="_blank" rel="noopener noreferrer"
-                 aria-label="Visit Cognizant Technology Solutions website">
-                Cognizant Technology Solutions
-              </a>
-            </h4>
-            <p id="positions">Intern</p>
-            <p>Gained hands-on experience in Python and SQL. Performed ETL with Azure Data Factory and Big Data
-              transformation using PySpark, leveraging tools like Hadoop and Hive. This enhanced technical skills in
-              Azure, PySpark, and Big Data technologies.</p>
-            <h3><i id="timeline">March/2025 - June/2025</i></h3>
-          </div>
-        </article>
-
-        <article class="projects-box1" role="gridcell">
-          <img src="images/portfolio7.jpg" alt="Heliverse Technologies logo" loading="lazy" />
-          <div class="projects-layer">
-            <h4>
-              <a id="company-name" href="https://heliverse.com/" target="_blank" rel="noopener noreferrer"
-                 aria-label="Visit Heliverse Technologies website">
-                Heliverse Technologies
-              </a>
-            </h4>
-            <p id="positions">Full Stack Developer</p>
-            <p>Contributed to an HRMS project using Nest.js and React.js. I improved UX through design analysis,
-              implementing client feedback. I also incorporated industry best practices from leading HRMS platforms like
-              greythr.com</p>
-            <h3><i id="timeline">September/2024 - December/2024</i></h3>
-          </div>
-        </article>
-
-        <article class="projects-box1" role="gridcell">
-          <img src="images/portfolio4.jpg" alt="Meta Craftlab logo" loading="lazy" />
-          <div class="projects-layer">
-            <h4>
-              <a id="company-name" href="https://craftlab.ai/" target="_blank" rel="noopener noreferrer"
-                 aria-label="Visit Meta Craftlab website">
-                Meta Craftlab Pvt. Ltd.
-              </a>
-            </h4>
-            <p id="positions">Associate Developer</p>
-            <p>Contributed to projects such as Net Credentials and Inboxera. Managed over 30 teams as Team Lead and
-              Project Manager for Developer Star, building and enhancing web-based tools using SvelteKit, Prisma ORM,
-              Flowbite, and MySQL.</p>
-            <h3><i id="timeline">May/2024 - September/2024</i></h3>
-          </div>
-        </article>
-
-        <article class="projects-box1" role="gridcell">
-          <img src="images/portfolio3.jpg" alt="A Plan By Consultants logo" loading="lazy" />
-          <div class="projects-layer">
-            <h4>
-              <a id="company-name" href="https://www.aplanbyconsultants.com/" target="_blank" rel="noopener noreferrer"
-                 aria-label="Visit A Plan By Consultants website">
-                A Plan By Consultants
-              </a>
-            </h4>
-            <p id="positions">Developer</p>
-            <p>Worked remotely on various projects including creating and maintaining pages with JavaScript and Google
-              Apps Script, designing Wix websites. Contributed to reverse recruiting by developing a grocery store website
-              and successfully implemented a mail merge project.</p>
-            <h3><i id="timeline">May/2024 - June/2024</i></h3>
-          </div>
-        </article>
-
-        <article class="projects-box1" role="gridcell">
-          <img src="images/portfolio1.jpg" alt="Banao Technologies logo" loading="lazy" />
-          <div class="projects-layer">
-            <h4>
-              <a id="company-name" href="https://banao.tech/" target="_blank" rel="noopener noreferrer"
-                 aria-label="Visit Banao Technologies website">
-                Banao Technologies
-              </a>
-            </h4>
-            <p id="positions">MERN Stack Developer</p>
-            <p>Actively contributed to the development and enhancement of multiple projects including AWFE, CrossDok,
-              Treato, Suvarna, Evallo, and TEPS. Implemented critical features, optimized backend functionalities, and
-              enhanced problem-solving skills while improving performance and user experience in a dynamic team
-              environment.</p>
-            <h3><i id="timeline">September/2023 - April/2024</i></h3>
-          </div>
-        </article>
-
-        <article class="projects-box1" role="gridcell">
-          <img src="images/portfolio8.jpg" alt="Alhansat Solutions logo" loading="lazy" />
-          <div class="projects-layer">
-            <h4>
-              <a id="company-name" href="https://alhansat.com/" target="_blank" rel="noopener noreferrer"
-                 aria-label="Visit Alhansat Solutions website">
-                Alhansat Solutions
-              </a>
-            </h4>
-            <p id="positions">Full Stack Developer (Tech Lead)</p>
-            <p>Led development efforts as a Technical Lead Intern for the 'Personal Portfolio Platform' project under IEEE
-              Bombay Section's Fall Internship Program. Gained hands-on experience with full-stack web development,
-              collaborating with cross-functional teams under the mentorship of Hannon Satopay.</p>
-            <h3><i id="timeline">September/2023 - November/2023</i></h3>
-          </div>
-        </article>
-
-        <article class="projects-box1" role="gridcell">
-          <img src="images/portfolio9.jpg" alt="ATBC Technologies logo" loading="lazy" />
-          <div class="projects-layer">
-            <h4>
-              <a id="company-name" href="https://www.linkedin.com/company/atbc-technologies-pvt-ltd/about/"
-                 target="_blank" rel="noopener noreferrer" aria-label="Visit ATBC Technologies LinkedIn page">
-                ATBC Technologies
-              </a>
-            </h4>
-            <p id="positions">Web Designer</p>
-            <p>Designed and developed the website AI Jobkit using Wix, integrating UI/UX design principles with
-              Intermediate JavaScript. Created landing pages and digital creatives, improving the company's online
-              presence and showcasing ability to translate business needs into effective digital solutions.</p>
-            <h3><i id="timeline">August/2023 - October/2023</i></h3>
-          </div>
-        </article>
-
-        <article class="projects-box1" role="gridcell">
-          <img src="images/portfolio10.jpg" alt="Knot Hashtags logo" loading="lazy" />
-          <div class="projects-layer">
-            <h4>
-              <a id="company-name" href="https://knothastags.com/" target="_blank" rel="noopener noreferrer"
-                 aria-label="Visit Knot Hashtags website">
-                Knot Hashtags
-              </a>
-            </h4>
-            <p id="positions">Full Stack Developer</p>
-            <p>Crafted the visual identity and user experience of an e-commerce website using Figma and uizard.io.
-              Collaborated with the development team to translate designs into a fully functional website.</p>
-            <h3><i id="timeline">July/2023 - October/2023</i></h3>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="projects" id="achievements" aria-labelledby="achievements-heading">
-      <h2 id="achievements-heading" class="heading">My<span> Achievements</span></h2>
-      <div class="projects-container" role="grid" aria-label="Professional achievements">
-        
-        <article class="projects-box1" role="gridcell">
-          <img src="images/portfolio13.jpg" alt="Competitive programming achievements" loading="lazy" />
-          <div class="projects-layer">
-            <h4>Competitive Programming</h4>
-            <p>Solved 566+ problems on LeetCode, demonstrating strong algorithmic thinking and data structure knowledge.
-              Secured 1st place in Code Swap and 2nd place in Blindathon coding competitions hosted by Amity Innovation
-              Club.</p>
-            <h3><i id="timeline">2022 - Present</i></h3>
-          </div>
-        </article>
-
-        <article class="projects-box1" role="gridcell">
-          <img src="images/portfolio4.jpg" alt="Leadership and mentorship achievements" loading="lazy" />
-          <div class="projects-layer">
-            <h4>Leadership & Mentorship</h4>
-            <p>Served as Coordinator and Tech Lead in the Explorer Club, guiding students in skill development and
-              innovation. Earned certificate and medal as technical lead in Faculty Development Program on "Applications
-              of Numerical Optimization Techniques."</p>
-            <h3><i id="timeline">2022 - 2024</i></h3>
-          </div>
-        </article>
-
-        <article class="projects-box1" role="gridcell">
-          <img src="images/portfolio7.jpg" alt="National competitions achievements" loading="lazy" />
-          <div class="projects-layer">
-            <h4>National Competitions</h4>
-            <p>Competed in prestigious national-level hackathons including Kavach and Accenture Innovation Challenge,
-              building advanced problem-solving and team collaboration skills while working under pressure.</p>
-            <h3><i id="timeline">2023</i></h3>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading" class="heading">Contact <span>Me!</span></h2>
-      <form action="#" method="POST" id="emailForm" novalidate aria-labelledby="contact-heading">
-        <div class="input-box">
-          <label for="fullName" class="sr-only">Full Name</label>
-          <input type="text" id="fullName" name="fullName" placeholder="Full Name" required
-                 aria-describedby="fullName-error" />
-          
-          <label for="emailAddress" class="sr-only">Email Address</label>
-          <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" required
-                 aria-describedby="emailAddress-error" />
+    <section class="achievements section-shell" id="achievements">
+      <div class="section-index">06 / BEYOND THE CODE</div>
+      <div class="achievement-grid">
+        <div class="section-heading">
+          <p class="eyebrow">PROOF OF CONSISTENCY</p>
+          <h2>Curiosity, competition, and <em>leadership.</em></h2>
+          <p class="section-copy">The work matters, but so does the discipline behind it.</p>
         </div>
-        <div class="input-box">
-          <label for="mobileNumber" class="sr-only">Mobile Number</label>
-          <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number"
-                 aria-describedby="mobileNumber-help" />
-          
-          <label for="subject" class="sr-only">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="Subject" required
-                 aria-describedby="subject-error" />
+        <div class="achievement-list">
+          <article><strong>Top 8%</strong><div><h3>LeetCode problem solving</h3><p>586+ algorithm and data-structure problems solved.</p></div></article>
+          <article><strong>30+</strong><div><h3>Interns led</h3><p>Managed end-to-end delivery and improved team efficiency by 30%.</p></div></article>
+          <article><strong>1st & 2nd</strong><div><h3>Competitive coding wins</h3><p>Placed in Code Swap and Blindathon among 200+ participants.</p></div></article>
+          <article><strong>50%</strong><div><h3>Merit scholarship</h3><p>Awarded on college tuition for sustained academic excellence.</p></div></article>
         </div>
-        <label for="message" class="sr-only">Message</label>
-        <textarea id="message" name="message" cols="40" rows="9" placeholder="Message" required
-                  aria-describedby="message-error"></textarea>
-        <button type="submit" class="btn" aria-label="Send message">
-          <i class='bx bx-send' aria-hidden="true"></i>
-          Send Message
-        </button>
-      </form>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div class="contact-card">
+        <div class="contact-copy">
+          <p class="eyebrow">HAVE A HARD PROBLEM?</p>
+          <h2>Let’s build something <em>that lasts.</em></h2>
+          <p>I’m interested in roles and collaborations where thoughtful engineering creates clear, measurable value.</p>
+          <div class="contact-direct">
+            <a href="mailto:ashwanix2749@gmail.com">ashwanix2749@gmail.com ↗</a>
+            <a href="tel:+917985717101">+91 79857 17101</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field-row">
+            <label><span>Your name</span><input name="name" autocomplete="name" placeholder="Jane Smith" required></label>
+            <label><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="jane@company.com" required></label>
+          </div>
+          <label><span>Subject</span><input name="subject" placeholder="A role, project, or idea" required></label>
+          <label><span>Message</span><textarea name="message" rows="5" placeholder="Tell me a little about what you’re building…" required></textarea></label>
+          <button class="button button-primary" type="submit">Start a conversation <span aria-hidden="true">↗</span></button>
+          <p class="form-note">This opens your email app—your message stays private.</p>
+        </form>
+      </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer" role="contentinfo">
-    <div class="footer-text">
-      <p>
-        A$H <i class='bx bxs-face-mask' aria-hidden="true"></i> ᴅʏsᴛᴏᴘɪᴀɴ ᴘʀᴏᴛᴀɢᴏɴɪsᴛ |
-        <i class='bx bx-phone' aria-hidden="true"></i> 
-        <a href="tel:+917985717101" aria-label="Call phone number">+917985717101</a> |
-        <i class='bx bx-envelope' aria-hidden="true"></i> 
-        <a aria-label="Send email">ashwanix2749@gmail.com</a>
-      </p>
-    </div>
-    <div class="footer-iconTop">
-      <a href="#home" aria-label="Back to top">
-        <i class='bx bxs-chevrons-up' aria-hidden="true"></i>
-      </a>
-    </div>
+  <footer class="site-footer section-shell">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">A$H</span><strong>Ashwani Kumar Singh</strong></a>
+    <p>Engineered with intention. <span id="current-year"></span></p>
+    <div class="footer-links"><a href="https://github.com/Ashwani2529" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/ashwani-singh-5a7072223" target="_blank" rel="noopener">LinkedIn</a><a href="https://leetcode.com/Ashwani2529/" target="_blank" rel="noopener">LeetCode</a><a href="https://www.facebook.com/profile.php?id=100021759763046" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/_ash___.__/" target="_blank" rel="noopener">Instagram</a><a href="#top">Back to top ↑</a></div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/scrollreveal" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
-  <script src="js/script.js" defer></script>
-  
-  <!-- Screen reader only styles -->
-  <style>
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-    
-    .skip-to-main {
-      position: absolute;
-      top: -40px;
-      left: 6px;
-      background: var(--accent-primary);
-      color: white;
-      padding: 8px;
-      text-decoration: none;
-      border-radius: 4px;
-      z-index: 10000;
-      transition: top 0.3s;
-    }
-    
-    .skip-to-main:focus {
-      top: 6px;
-    }
-    
-    .menu-toggle {
-      background: none;
-      border: none;
-      color: inherit;
-      cursor: pointer;
-    }
-  </style>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
