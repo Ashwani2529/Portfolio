@@ -1606,6 +1606,7 @@ h1 em, h2 em {
 .cert-provider.fabric { background: linear-gradient(145deg, #6862dc, #ba56c0); }
 .cert-provider.azure { background: linear-gradient(145deg, #168bc0, #1d58a8); }
 .cert-provider.github { color: #f2f2f2; background: #24262c; }
+.cert-provider.claude { background: linear-gradient(145deg, #d97757, #b8532f); }
 
 .cert-card span {
   color: var(--muted);
